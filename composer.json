@@ -1,0 +1,76 @@
+{
+  "name": "cslant/laravel-lark-git-notifier",
+  "description": "Send notification from Gitlab and Github events to Lark",
+  "keywords": [
+    "cslant",
+    "lark",
+    "lark-notify",
+    "git-webhook",
+    "lark-notifier",
+    "lark-notify",
+    "github-notifier",
+    "gitlab-notifier",
+    "github-lark-bot",
+    "gitlab-lark-bot",
+    "github-lark-notify",
+    "gitlab-lark-notify",
+    "laravel-lark-git-notifier"
+  ],
+  "homepage": "https://github.com/cslant/laravel-lark-git-notifier",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tan Nguyen",
+      "email": "tannp27@gmail.com",
+      "homepage": "https://tanhongit.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CSlant\\LaravelLarkGitNotifier\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CSlant\\LaravelLarkGitNotifier\\Tests\\": "tests"
+    }
+  },
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^v3.37",
+    "nunomaduro/collision": "^7.10",
+    "nunomaduro/larastan": "^2.6",
+    "orchestra/testbench": "^8.14",
+    "pestphp/pest": "^2.24",
+    "phpstan/extension-installer": "^1.3",
+    "phpstan/phpstan-deprecation-rules": "^1.1",
+    "phpstan/phpstan-phpunit": "^1.3"
+  },
+  "scripts": {
+    "analyse": "vendor/bin/phpstan",
+    "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
+    "test": "vendor/bin/pest"
+  },
+  "support": {
+    "issues": "https://github.com/cslant/laravel-lark-git-notifier/issues"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CSlant\\LaravelLarkGitNotifier\\Providers\\LarkGitNotifierServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "phpstan/extension-installer": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
