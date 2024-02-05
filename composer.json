@@ -37,7 +37,8 @@
     }
   },
   "require": {
-    "php": "^8.1"
+    "php": "^8.1",
+    "cslant/lark-git-notifier": "dev-main"
   },
   "require-dev": {
     "friendsofphp/php-cs-fixer": "^v3.37",
@@ -63,6 +64,9 @@
         "CSlant\\LaravelLarkGitNotifier\\Providers\\LarkGitNotifierServiceProvider"
       ]
     }
+  },
+  "suggest": {
+    "cslant/laravel-telegram-git-notifier:" : "Send notification from Gitlab and Github events to Telegram"
   },
   "config": {
     "sort-packages": true,
