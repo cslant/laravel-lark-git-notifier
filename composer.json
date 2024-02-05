@@ -65,6 +65,9 @@
       ]
     }
   },
+  "suggest": {
+    "cslant/laravel-telegram-git-notifier:" : "Send notification from Gitlab and Github events to Telegram"
+  },
   "config": {
     "sort-packages": true,
     "allow-plugins": {
